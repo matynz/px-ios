@@ -15,6 +15,8 @@
       <script src="./js/cookies.min.js"></script>
       <script src="./js/prism.js"></script>
       <script src="./js/clipboard.js"></script>
+      <script src="./js/snippets.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
 
       <link rel="stylesheet" type="text/css" href="./css/lato.css" />
 
@@ -98,8 +100,8 @@
             </div>
                                                             <div class ="row">
                <ul class="nav nav-tabs">
-  <li role="presentation" ><a href="index.html">Swift</a></li>
-  <li role="presentation" class="active"><a href="indexObc.html">Objective-C</a></li>
+  <li role="presentation" class="active"><a href="index.html">Swift</a></li>
+  <li role="presentation"><a href="indexObc.html">Objective-C</a></li>
 </ul>
 </div>
             <div class="row" id="step-one">
@@ -111,21 +113,18 @@
                   </div>
                </div>
 
-               <div class="col-md-6 code">
-                  <pre class="snippet">
-                     <code id="flavor_3_step_1" class="line-numbers language-xml">
-source 'https://github.com/CocoaPods/Specs.git'
-# Se necesita este parámetro por ser una SDK en swift
-use_frameworks!
-platform :ios, '8.0'
-pod 'MercadoPagoSDK', '~> 0.9.0'
-                     </code>
-         <button class="copy-button" alt="Copiar código">
-                        <img src="./img/clippy.svg" width="13">
+               <div class="col-md-6 code" id="flavor_3_step_1">
+<!--                   <pre class="snippet"> -->
+                <!-- <code data-gist-id="765825e1775ce8e971e813abae2badc0" data-gist-file="pod" data-gist-hide-footer="true"></code> -->
+                     <!-- <div id="flavor_3_step_1" class="line-numbers language-xml"> -->
+                     <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=pod"></script>
+                     <!-- </div> -->
+        <!--  <button class="copy-button" alt="Copiar código"> -->
+ <!--                        <img src="./img/clippy.svg" width="13">
                     </button>
-                  </pre>
-                  
-               </div>
+                  </pre> -->
+<!--                   
+               </div> -->
             </div>
 
 
@@ -145,7 +144,8 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
 
 
             <div class="container col-md-6 code">
-              <ul class="nav nav-tabs">
+            <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step2.m"></script>
+              <!-- <ul class="nav nav-tabs">
                   <li class="active"><a data-toggle="tab" href="#flavor_3_step_2_swift">Swift</a></li>
                   <li><a data-toggle="tab" href="#flavor_3_step_2_objc">Objective-C</a></li>
               </ul>
@@ -202,7 +202,7 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                                   </button>
                                 </pre>
                              </div>
-              </div>
+              </div> -->
 
             </div>
         </div>
@@ -220,7 +220,7 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                         Creá un ViewController (MainViewController, por ejemplo) e insertá un botón en el .xib correspondiente. También agregá un campo de texto (en nuestro caso lo llamamos paymentResult) para mostrar los resultados del pago.
                      </p>
                      <p>
-                        Pegá el código de la derecha en tu clase <u>MainViewController.swift</u>. 
+                        Pegá el código de la derecha en tu clase <u>MainViewController.m</u>. 
                      </p>
                      <p>
                         En el siguiente paso estarás trabajando sobre el evento asociado al click botón (startCheckout). 
@@ -229,7 +229,8 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                </div>
 
           <div class="container col-md-6 code">
-              <ul class="nav nav-tabs">
+          <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step3.m"></script>
+              <!-- <ul class="nav nav-tabs">
                   <li class="active"><a data-toggle="tab" href="#flavor_3_step_3_swift">Swift</a></li>
                   <li><a data-toggle="tab" href="#flavor_3_step_3_objc">Objective-C</a></li>
               </ul>
@@ -273,7 +274,7 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                                       <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
                                   </button>
                                 </pre>
-                             </div>
+                             </div> -->
               </div>
 
             </div>
@@ -316,7 +317,8 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                </div>
 
                    <div class="container col-md-6 code">
-                    <ul class="nav nav-tabs">
+                   <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step4.m"></script>
+                    <!-- <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#flavor_3_step_4_swift">Swift</a></li>
                         <li><a data-toggle="tab" href="#flavor_3_step_4_objc">Objective-C</a></li>
                     </ul>
@@ -362,7 +364,7 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                                         </button>
                                       </pre>
                                    </div>
-                    </div>
+                    </div> -->
 
                   </div>
             </div>
@@ -400,7 +402,8 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
 
 
 <div class="container col-md-6 code">
-                    <ul class="nav nav-tabs">
+<script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step5.m"></script>
+                    <!-- <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#flavor_3_step_5_swift">Swift</a></li>
                         <li><a data-toggle="tab" href="#flavor_3_step_5_objc">Objective-C</a></li>
                     </ul>
@@ -435,8 +438,8 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                                             <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
                                         </button>
                                       </pre>
-                                   </div>
-                    </div>
+                                   </div> -->
+<!--                     </div> -->
 
                   </div>
 </div>
@@ -528,7 +531,8 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
 
 
               <div class="container col-md-6 code">
-                    <ul class="nav nav-tabs">
+              <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step7.m"></script>
+<!--                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#flavor_3_step_7_swift">Swift</a></li>
                         <li><a data-toggle="tab" href="#flavor_3_step_7_objc">Objective-C</a></li>
                     </ul>
@@ -579,7 +583,7 @@ pod 'MercadoPagoSDK', '~> 0.9.0'
                                         </button>
                                       </pre>
                                    </div>
-                    </div>
+                    </div> -->
 
                   </div>
             </div>
