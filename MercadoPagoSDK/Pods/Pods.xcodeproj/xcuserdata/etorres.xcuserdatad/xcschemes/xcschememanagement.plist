@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MPGoogleAnalytics.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>MercadoPagoTracker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-MercadoPagoSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0EE616BF4FBE9D199AC725CFDB69A9A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>28D276CF446A0343A2113A02A321FFCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A2DA39B05F1169FBB39C13641C683D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C44E3DBA5D8C869A82450BF7DFC3D60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E64C8F08696453E633DE528C692BF193</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

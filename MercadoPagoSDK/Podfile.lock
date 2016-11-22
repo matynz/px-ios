@@ -1,0 +1,13 @@
+PODS:
+  - MercadoPagoTracker (0.9.0):
+    - MPGoogleAnalytics
+  - MPGoogleAnalytics (0.2.9)
+
+DEPENDENCIES:
+  - MercadoPagoTracker
+
+SPEC CHECKSUMS:
+  MercadoPagoTracker: 216adffb578d1ca38cc0c1c7ea7c2cfe5f54c30c
+  MPGoogleAnalytics: 2d3b3fe705ef686f0becf224a133f74c02af358a
+
+COCOAPODS: 0.39.0
