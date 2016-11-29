@@ -74,11 +74,8 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+    <li><a href="">Pod 2.0.8</a></li>
+    <li><a href="./workshop/index.html">Workshop</a></li>
   </ul>
 </div>
 <div class="text-center">
@@ -104,6 +101,7 @@
   <li role="presentation"><a href="indexObc.html">Objective-C</a></li>
 </ul>
 </div>
+
             <div class="row" id="step-one">
                <div class="col-md-6 step-desc">
                   <div class="desc">
@@ -114,17 +112,20 @@
                </div>
 
                <div class="col-md-6 code" id="flavor_3_step_1">
-<!--                   <pre class="snippet"> -->
-                <!-- <code data-gist-id="765825e1775ce8e971e813abae2badc0" data-gist-file="pod" data-gist-hide-footer="true"></code> -->
-                     <!-- <div id="flavor_3_step_1" class="line-numbers language-xml"> -->
-                     <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=pod"></script>
-                     <!-- </div> -->
-        <!--  <button class="copy-button" alt="Copiar código"> -->
- <!--                        <img src="./img/clippy.svg" width="13">
+                  <pre class="snippet">
+                     <code id="flavor_3_step_1" class="line-numbers language-xml">
+                     source 'https://github.com/CocoaPods/Specs.git'
+# Se necesita este parámetro por ser una SDK en swift
+use_frameworks!
+platform :ios, '8.0'
+pod 'MercadoPagoSDK', '2.0.8'
+                     </code>
+         <button class="copy-button" alt="Copiar código">
+                        <img src="./img/clippy.svg" width="13">
                     </button>
-                  </pre> -->
-<!--                   
-               </div> -->
+                  </pre>
+                  
+               </div>
             </div>
 
 
@@ -144,11 +145,6 @@
 
 
             <div class="container col-md-6 code">
-            <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step2.swift"></script>
-              <!-- <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#flavor_3_step_2_swift">Swift</a></li>
-                  <li><a data-toggle="tab" href="#flavor_3_step_2_objc">Objective-C</a></li>
-              </ul>
 
                <div class="tab-content">
                               <div class="tab-pane fade in active" id="flavor_3_step_2_swift">
@@ -174,35 +170,7 @@
                                 </pre>
                              </div>
 
-                              <div class="tab-pane fade in" id="flavor_3_step_2_objc">
-                                <pre class="snippet">
-                                   <code id="flavor_3_step_2" class="line-numbers language-swift">
-                                      #import "AppDelegate.h"
-                    @import MercadoPagoSDK;
-
-                                @interface AppDelegate ()
-
-                                @end
-
- @implementation AppDelegate
-
-                                NSString *publicKey =  @"TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a";
-
-                                - (BOOL)application:(UIApplication *)application 
-                                    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-                                      [MercadoPagoContext setPublicKey: publicKey];
-                                      return YES;
-                                }
-
-                                @end
-                                   </code>
-                       
-                                   <button class="copy-button">
-                                      <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
-                                  </button>
-                                </pre>
-                             </div>
-              </div> -->
+              </div> 
 
             </div>
         </div>
@@ -229,11 +197,6 @@
                </div>
 
           <div class="container col-md-6 code">
-          <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step3.swift"></script>
-              <!-- <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#flavor_3_step_3_swift">Swift</a></li>
-                  <li><a data-toggle="tab" href="#flavor_3_step_3_objc">Objective-C</a></li>
-              </ul>
 
                <div class="tab-content">
                               <div class="tab-pane fade in active" id="flavor_3_step_3_swift">
@@ -263,18 +226,6 @@
                                 </pre>
                              </div>
 
-                              <div class="tab-pane fade in" id="flavor_3_step_3_objc">
-                                <pre class="snippet">
-                                   <code id="flavor_3_step_3" class="line-numbers language-swift">
-                                     objective C
-                                      }
-                                   </code>
-                       
-                                   <button class="copy-button">
-                                      <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
-                                  </button>
-                                </pre>
-                             </div> -->
               </div>
 
             </div>
@@ -317,11 +268,6 @@
                </div>
 
                    <div class="container col-md-6 code">
-                   <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step4.swift"></script>
-                    <!-- <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#flavor_3_step_4_swift">Swift</a></li>
-                        <li><a data-toggle="tab" href="#flavor_3_step_4_objc">Objective-C</a></li>
-                    </ul>
 
                      <div class="tab-content">
                                     <div class="tab-pane fade in active" id="flavor_3_step_4_swift">
@@ -351,20 +297,7 @@
                                         </button>
                                       </pre>
                                    </div>
-
-                                    <div class="tab-pane fade in" id="flavor_3_step_4_objc">
-                                      <pre class="snippet">
-                                         <code id="flavor_3_step_4" class="line-numbers language-swift">
-                                           objective C
-                                            }
-                                         </code>
-                             
-                                         <button class="copy-button">
-                                            <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
-                                        </button>
-                                      </pre>
-                                   </div>
-                    </div> -->
+                    </div>
 
                   </div>
             </div>
@@ -402,11 +335,6 @@
 
 
 <div class="container col-md-6 code">
-<script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step5.swift"></script>
-                    <!-- <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#flavor_3_step_5_swift">Swift</a></li>
-                        <li><a data-toggle="tab" href="#flavor_3_step_5_objc">Objective-C</a></li>
-                    </ul>
 
                      <div class="tab-content">
                                     <div class="tab-pane fade in active" id="flavor_3_step_5_swift">
@@ -427,19 +355,7 @@
                                       </pre>
                                    </div>
 
-                                    <div class="tab-pane fade in" id="flavor_3_step_5_objc">
-                                      <pre class="snippet">
-                                         <code id="flavor_3_step_5" class="line-numbers language-swift">
-                                           objective C
-                                            }
-                                         </code>
-                             
-                                         <button class="copy-button">
-                                            <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
-                                        </button>
-                                      </pre>
-                                   </div> -->
-<!--                     </div> -->
+                    </div>
 
                   </div>
 </div>
@@ -531,11 +447,6 @@
 
 
               <div class="container col-md-6 code">
-              <script src="https://gist.github.com/edentorres/765825e1775ce8e971e813abae2badc0.js?file=F3Step7.swift"></script>
-<!--                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#flavor_3_step_7_swift">Swift</a></li>
-                        <li><a data-toggle="tab" href="#flavor_3_step_7_objc">Objective-C</a></li>
-                    </ul>
 
                      <div class="tab-content">
                                     <div class="tab-pane fade in active" id="flavor_3_step_7_swift">
@@ -570,20 +481,7 @@
                                         </button>
                                       </pre>
                                    </div>
-
-                                    <div class="tab-pane fade in" id="flavor_3_step_7_objc">
-                                      <pre class="snippet">
-                                         <code id="flavor_3_step_7" class="line-numbers language-swift">
-                                           objective C
-                                            }
-                                         </code>
-                             
-                                         <button class="copy-button">
-                                            <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
-                                        </button>
-                                      </pre>
-                                   </div>
-                    </div> -->
+                    </div> 
 
                   </div>
             </div>
