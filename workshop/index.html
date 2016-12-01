@@ -7,18 +7,17 @@
       <meta name="description" content="Sitio para desarrolladores de MercadoPago.">
       <meta name="keywords" content="mercadopago,sdk,payment,pagos,braintree,paypal,html5,javascript,mobile,drifty,ionic,hybrid,phonegap,cordova,native,ios,android,angularjs">
       <title>Soluciones de pago para el negocio que quieras - MercadoPago</title>
-      <link href="./../css/site.css" rel="stylesheet">
-      <link href="./../css/prism.css" rel="stylesheet" />
-      <script src="./../js/jquery.min.js"></script>
-      <script src="./../js/bootstrap.min.js"></script>
-      <script src="./../js/site.js"></script>
-      <script src="./../js/cookies.min.js"></script>
-      <script src="./../js/prism.js"></script>
-      <script src="./../js/clipboard.js"></script>
-      <script src="./../js/snippets.js"></script>
+      <link href="./css/site.css" rel="stylesheet">
+      <link href="./css/prism.css" rel="stylesheet" />
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/site.js"></script>
+      <script src="./js/cookies.min.js"></script>
+      <script src="./js/prism.js"></script>
+      <script src="./js/clipboard.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
 
-      <link rel="stylesheet" type="text/css" href="./../css/lato.css" />
+      <link rel="stylesheet" type="text/css" href="./css/lato.css" />
 
    </head>
    <body class="getting-started-page">
@@ -48,7 +47,7 @@
          </div>
          
       </div>
-      <div id="mati_header" style="height: 450px; margin: 0 auto; padding: 0;position: relative;width: 100%;top: -276px;overflow-x: hidden;OVERFLOW-Y: hidden;z-index: -100;background: url('./../img/landing.jpg');background-size: cover;">
+      <div id="mati_header" style="height: 450px; margin: 0 auto; padding: 0;position: relative;width: 100%;top: -276px;overflow-x: hidden;OVERFLOW-Y: hidden;z-index: -100;background: url('./img/landing.jpg');background-size: cover;">
          <div style="background: rgba(0,0,0,0.5); height: 500px;" ></div>
       </div>
       <div class="container content-container" style="margin-top: -300px;">
@@ -66,41 +65,46 @@
                </p>
                <br />
             </div>
-            <div class="row">
+<!-- Version -->
+<div class="row">
             <hr>
-                    <div class="dropdown ">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Workshop
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="">Workshop</a></li>
-    <li><a href="./../index.html">Pod 2.0.8</a></li>
+  <div class="btn-group" role="group">
+    <button type="button" data-toggle="dropdown" value="1" class="btn btn-default btn-sm dropdown-toggle">
+      Pod Workshop <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="./index.html">Pod Workshop</a></li>
+      <li><a href="./workshop/index.html">Pod 2.0.8</a></li>
+    </ul>
+  </div> 
+
+  <div class="text-center">
+    <h3>¿Que hay de nuevo?</h3>
+  </div>
+  <h5>Version de Xcode: 8.0+</h5>
+  <h5>Version de Swift: 3.0.1</h5>
+  <h4><center>Cambios:</center></h4>
+  <h6> 
+    <ul>
+    <li>Cambio 1</li>
+    <li>Cambio 2</li>
+    <li>Cambio 3</li>
+    </ul>
+  </h6>
+  <div class="text-center">
+    <h4>¿Comó me migro?</h4>
+  </div>
+</div>
+  <!-- Swift/Objective-C -->
+<div class ="row">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="index.html">Swift</a></li>
+    <li role="presentation"><a href="indexObc.html">Objective-C</a></li>
   </ul>
 </div>
-<div class="text-center">
-  <h3>¿Que hay de nuevo?</h3>
-</div>
-<h5>Version de Xcode: 8.0+</h5>
-<h5>Version de Swift: 3.0.1</h5>
-  <h4><center>Cambios:</center></h4>
-<h6 > 
-<ul>
-  <li>Cambio 1</li>
-  <li>Cambio 2</li>
-  <li>Cambio 3</li>
-</ul>
-</h6>
-<div class="text-center">
-  <h4>¿Comó me migro?</h4>
-</div>
-            </div>
-                                                            <div class ="row">
-               <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="index.html">Swift</a></li>
-  <li role="presentation"><a href="indexObc.html">Objective-C</a></li>
-</ul>
-</div>
+
+ <!-- Step 1 - Pod -->
+
             <div class="row" id="step-one">
                <div class="col-md-6 step-desc">
                   <div class="desc">
@@ -113,14 +117,14 @@
                <div class="col-md-6 code" id="flavor_3_step_1">
                   <pre class="snippet">
                      <code id="flavor_3_step_1" class="line-numbers language-xml">
-                     source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 # Se necesita este parámetro por ser una SDK en swift
 use_frameworks!
 platform :ios, '8.0'
 pod 'MercadoPagoSDK', '2.0.8'
                      </code>
-         <button class="copy-button" alt="Copiar código">
-                        <img src="./../img/clippy.svg" width="13">
+                    <button class="copy-button" alt="Copiar código">
+                        <img src="./img/clippy.svg" width="13">
                     </button>
                   </pre>
                   
@@ -130,54 +134,44 @@ pod 'MercadoPagoSDK', '2.0.8'
 
 <!-- Step 2 - Setea clave publica -->
         <div class="row" id="step-two"> 
-               <div class="col-md-6 step-desc">
-                  <div class="desc">
-                     <h3>2.   Setea tu clave pública </h3>
-                     <p>
-                        Setea la clave pública correspondiente a tu cuenta de MercadoPago en la clase AppDelegate. En este caso utilizaremos una clave de prueba. Más adelante veremos como puedes obtener tu propia clave pública. 
-                     </p>
-                     <p class="advanced-panel">
-                      Si tu proyecto está escrito en <b>Objective-C</b> necesitas setear en "Build Settings" el parámetro <b>"Embedded Content Contains Swift Code"</b> en "Yes", ya que la SDK está escrita en Swift.
-                    </p>
-                  </div>
-               </div>
-
-
-            <div class="container col-md-6 code">
-
-               <div class="tab-content">
-                              <div class="tab-pane fade in active" id="flavor_3_step_2_swift">
-                                <pre class="snippet">
-                                   <code id="flavor_3_step_2" class="line-numbers language-swift">
-                                      class AppDelegate: UIResponder, UIApplicationDelegate {
-
-                                        var window: UIWindow?
-                                        // 1 - Clave pública
-                                        let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
-
-                                        func application(application: UIApplication, 
-                                          didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool { 
-                                            MercadoPagoContext.setPublicKey(publicKey)
-                                            return true
-                                        }
-                                      }
-                                   </code>
-                       
-                                   <button class="copy-button">
-                                      <img src="./../img/clippy.svg" width="13" alt="Copy to clipboard">
-                                  </button>
-                                </pre>
-                             </div>
-
-              </div> 
-
+          <div class="col-md-6 step-desc">
+            <div class="desc">
+               <h3>2.   Setea tu clave pública </h3>
+               <p>
+                  Setea la clave pública correspondiente a tu cuenta de MercadoPago en la clase AppDelegate. En este caso utilizaremos una clave de prueba. Más adelante veremos como puedes obtener tu propia clave pública. 
+               </p>
+               <p class="advanced-panel">
+                Si tu proyecto está escrito en <b>Objective-C</b> necesitas setear en "Build Settings" el parámetro <b>"Embedded Content Contains Swift Code"</b> en "Yes", ya que la SDK está escrita en Swift.
+              </p>
             </div>
+          </div>
+          <div class="container col-md-6 code">
+            <pre class="snippet">
+               <code id="flavor_3_step_2" class="line-numbers language-swift">
+                  class AppDelegate: UIResponder, UIApplicationDelegate {
+
+                    var window: UIWindow?
+                    // 1 - Clave pública
+                    let publicKey = "TEST-ad365c37-8012-4014-84f5-6c895b3f8e0a"
+
+                    func application(application: UIApplication, 
+                      didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool { 
+                        MercadoPagoContext.setPublicKey(publicKey)
+                        return true
+                    }
+                  }
+               </code>
+               <button class="copy-button">
+                  <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
+              </button>
+            </pre>
+          </div>
         </div>
 <!-- --------------------- -->
 
 <!-- Step 3 -->
-            <div class="row" id="step-three">
-               <div class="col-md-6 step-desc">
+        <div class="row" id="step-three">
+          <div class="col-md-6 step-desc">
                   <div class="desc">
                      <h3>3.   Agregá un botón de pago en tu aplicación</h3>
                      <p>
@@ -196,173 +190,152 @@ pod 'MercadoPagoSDK', '2.0.8'
                </div>
 
           <div class="container col-md-6 code">
+            <pre class="snippet">
+               <code id="flavor_3_step_3" class="line-numbers language-swift">
+                 import UIKit
 
-               <div class="tab-content">
-                              <div class="tab-pane fade in active" id="flavor_3_step_3_swift">
-                                <pre class="snippet">
-                                   <code id="flavor_3_step_2" class="line-numbers language-swift">
-                                     import UIKit
+                    class MainViewController: UIViewController {
 
-                                        class MainViewController: UIViewController {
+                      @IBOutlet weak var payButton: UIButton!
 
-                                          @IBOutlet weak var payButton: UIButton!
+                      @IBOutlet weak var paymentResult: UITextField!
 
-                                          @IBOutlet weak var paymentResult: UITextField!
-
-                                          override func viewDidLoad() {
-                                            super.viewDidLoad()
-                                            
-                                            self.payButton.addTarget(self, 
-                                              action: #selector(MainViewController.startCheckout), 
-                                              forControlEvents: .TouchUpInside)
-                                          }
-                                        }
-                                   </code>
-                       
-                                   <button class="copy-button">
-                                      <img src="./../img/clippy.svg" width="13" alt="Copy to clipboard">
-                                  </button>
-                                </pre>
-                             </div>
-
-              </div>
-
-            </div>
-</div>
+                      override func viewDidLoad() {
+                        super.viewDidLoad()
+                        
+                        self.payButton.addTarget(self, 
+                          action: #selector(MainViewController.startCheckout), 
+                          forControlEvents: .TouchUpInside)
+                      }
+                    }
+               </code>
+   
+               <button class="copy-button">
+                  <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
+              </button>
+            </pre>
+          </div>
+        </div>
 <!-- ---------------------- >
 
 
 <!-- Step 4 -->
-            <div class="row" id="step-four">
-               <div class="col-md-6 step-desc">
-                  <div class="desc">
-                     <h3>4.   Inicia el <i>checkout</i> desde tu aplicación</h3>
+        <div class="row" id="step-four">
+          <div class="col-md-6 step-desc">
+            <div class="desc">
+               <h3>4.   Inicia el <i>checkout</i> desde tu aplicación</h3>
 
-                      <p class="advanced-panel">
-                        <b>Pruébalo con nuestros datos: </b>
-                        <br />
-                        Usa este código con nuestros datos, así podrás probar rápido la experiencia completa. 
-                        <br />
-                        Cuando quieras ir a <a href="#step-six">producción</a>, sólo necesitarás usar tus propios datos. 
-                      </p>
-                      <p>
-                        Para iniciar nuestro checkout sólo necesitas:
-                        <ul>
-                          <li style="list-style-type: decimal;"><b>Clave pública:</b> Es un identificador que agrupa tu cuenta, tu aplicación y sus configuraciones. 
-                            <ul>
-                              <li><a href="https://www.mercadopago.com/mla/account/credentials" target="_blank">Crea tus credenciales</a>.</li>
-                              <li><a href="https://applications.mercadopago.com/" target="_blank">Configura tu aplicación</a>.</li>
-                            </ul>
-                          </li>
-                          <li style="list-style-type: decimal;"><b>Identificador de la preferencia de pago:</b> Es una representación de lo que cobras. Incluye estos atributos:
-                            <ul>
-                             <li>Datos y monto.</li>
-                             <li>Medios de pago que aceptas.</li>
-                             <li>Información del comprador (Por seguridad, el <b>e-mail es obligatorio</b>).</li>
-                            </ul>
-                          </li>
-                        </ul>
-                    </p>
-                  </div>
-               </div>
-
-                   <div class="container col-md-6 code">
-
-                     <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="flavor_3_step_4_swift">
-                                      <pre class="snippet">
-                                         <code id="flavor_3_step_4" class="line-numbers language-swift">
-                                                  // 2 - Identificador de preferencia de pago
-                                                  let prefId = "150216849-ceed1ee4-8ab9-4449-869f-f4a8565d386f" 
-
-                                                  // Método ejecutado al hacer clic en el botón
-                                                  func startCheckout(){
-                                                    let checkout = MPFlowBuilder.startCheckoutViewController(prefId, 
-                                                    callback: { (payment: Payment) in
-                                                        // Listo! El pago ya fue procesado por MP. 
-                                                        // En el paso siguiente se describe el método displayPaymentInfo
-                                                        self.displayPaymentInfo(payment)
-            
-                                                    }, callbackCancel: {
-                                                        // Acción a ejecutar en caso de que el usuario no efectue la compra
-                                                    })
-
-                                                    self.presentViewController(checkout, animated: true, completion: {})
-                                                  }
-                                         </code>
-                             
-                                         <button class="copy-button">
-                                            <img src="./../img/clippy.svg" width="13" alt="Copy to clipboard">
-                                        </button>
-                                      </pre>
-                                   </div>
-                    </div>
-
-                  </div>
+                <p class="advanced-panel">
+                  <b>Pruébalo con nuestros datos: </b>
+                  <br />
+                  Usa este código con nuestros datos, así podrás probar rápido la experiencia completa. 
+                  <br />
+                  Cuando quieras ir a <a href="#step-six">producción</a>, sólo necesitarás usar tus propios datos. 
+                </p>
+                <p>
+                  Para iniciar nuestro checkout sólo necesitas:
+                  <ul>
+                    <li style="list-style-type: decimal;"><b>Clave pública:</b> Es un identificador que agrupa tu cuenta, tu aplicación y sus configuraciones. 
+                      <ul>
+                        <li><a href="https://www.mercadopago.com/mla/account/credentials" target="_blank">Crea tus credenciales</a>.</li>
+                        <li><a href="https://applications.mercadopago.com/" target="_blank">Configura tu aplicación</a>.</li>
+                      </ul>
+                    </li>
+                    <li style="list-style-type: decimal;"><b>Identificador de la preferencia de pago:</b> Es una representación de lo que cobras. Incluye estos atributos:
+                      <ul>
+                       <li>Datos y monto.</li>
+                       <li>Medios de pago que aceptas.</li>
+                       <li>Información del comprador (Por seguridad, el <b>e-mail es obligatorio</b>).</li>
+                      </ul>
+                    </li>
+                  </ul>
+              </p>
             </div>
+          </div>
+          <div class="container col-md-6 code">
+            <pre class="snippet">
+               <code id="flavor_3_step_4" class="line-numbers language-swift">
+                        // 2 - Identificador de preferencia de pago
+                        let prefId = "150216849-ceed1ee4-8ab9-4449-869f-f4a8565d386f" 
+
+                        // Método ejecutado al hacer clic en el botón
+                        func startCheckout(){
+                          let checkout = MPFlowBuilder.startCheckoutViewController(prefId, 
+                          callback: { (payment: Payment) in
+                              // Listo! El pago ya fue procesado por MP. 
+                              // En el paso siguiente se describe el método displayPaymentInfo
+                              self.displayPaymentInfo(payment)
+
+                          }, callbackCancel: {
+                              // Acción a ejecutar en caso de que el usuario no efectue la compra
+                          })
+
+                          self.presentViewController(checkout, animated: true, completion: {})
+                        }
+               </code>
+   
+               <button class="copy-button">
+                  <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
+              </button>
+            </pre>
+          </div>
+        </div>
 <!-- ---------------------- >
 
   <!-- Step 5 -->
-            <div class="row" id="step-five">
-               <div class="col-md-6 step-desc">
-                  <div class="desc">
-                     <h3>5.   Espera el resultado del pago</h3>
-                     <p>
-                        El SDK devolverá siempre un resultado del pago. 
-                      </p>
-                      <p>
-                        Si hubo algún error insalvable o el usuario lo abandonó, devolverá una excepción para que puedas entender qué pasó.  
-                      </p>
-                      <p>
-                        Estos son los atributos más importantes del pago:
-                        <ul>
-                          <li><i>id</i>: Identificador del pago.</li>
-                          <li><i>status</i>: <a href="https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/">Estados del pago</a>.</li>
-                          <li><i>payment_method_id</i>: Identificador del medio de pago que eligió tu usuario.</li>
-                          <li><i>payment_type_id</i>: Tipo de medio elegido.</li>
-                          <li><i>card</i>: Objeto que identifica la tarjeta de tu usuario.</li>
-                          <li><i>issuer_id</i>: Identificador del banco de la tarjeta que eligió tu usuario.</li>
-                          <li><i>installments</i>: Cantidad de cuotas elegidas.</li>
-                        </ul>
-                      </p>
-                      <p>
-                        Conoce más sobre el objeto Payment <a href="https://www.mercadopago.com.ar/developers/es/api-docs/account/payments/" target="_blank">aquí</a>.
-                     </p>
-                  </div>
-               </div>
+        <div class="row" id="step-five">
+          <div class="col-md-6 step-desc">
+            <div class="desc">
+               <h3>5.   Espera el resultado del pago</h3>
+               <p>
+                  El SDK devolverá siempre un resultado del pago. 
+                </p>
+                <p>
+                  Si hubo algún error insalvable o el usuario lo abandonó, devolverá una excepción para que puedas entender qué pasó.  
+                </p>
+                <p>
+                  Estos son los atributos más importantes del pago:
+                  <ul>
+                    <li><i>id</i>: Identificador del pago.</li>
+                    <li><i>status</i>: <a href="https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/webhooks/payment-status/">Estados del pago</a>.</li>
+                    <li><i>payment_method_id</i>: Identificador del medio de pago que eligió tu usuario.</li>
+                    <li><i>payment_type_id</i>: Tipo de medio elegido.</li>
+                    <li><i>card</i>: Objeto que identifica la tarjeta de tu usuario.</li>
+                    <li><i>issuer_id</i>: Identificador del banco de la tarjeta que eligió tu usuario.</li>
+                    <li><i>installments</i>: Cantidad de cuotas elegidas.</li>
+                  </ul>
+                </p>
+                <p>
+                  Conoce más sobre el objeto Payment <a href="https://www.mercadopago.com.ar/developers/es/api-docs/account/payments/" target="_blank">aquí</a>.
+               </p>
+            </div>
+          </div>
+
+          <div class="container col-md-6 code">
+            <pre class="snippet">
+               <code id="flavor_3_step_5" class="line-numbers language-swift">
+                  func displayPaymentInfo(payment : Payment){
+                    let paymentInfo : String
+                    paymentInfo = "id : " + String(payment._id) + ", 
+                        status : " + payment.status + ", 
+                        status detail : " + payment.statusDetail
+                    self.paymentResult.text = paymentInfo
+                  }
+               </code>
+   
+               <button class="copy-button">
+                  <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
+              </button>
+            </pre>
+          </div>
+        </div>
 
 
-
-<div class="container col-md-6 code">
-
-                     <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="flavor_3_step_5_swift">
-                                      <pre class="snippet">
-                                         <code id="flavor_3_step_5" class="line-numbers language-swift">
-                                            func displayPaymentInfo(payment : Payment){
-  let paymentInfo : String
-  paymentInfo = "id : " + String(payment._id) + ", 
-      status : " + payment.status + ", 
-      status detail : " + payment.statusDetail
-  self.paymentResult.text = paymentInfo
-}
-                                         </code>
-                             
-                                         <button class="copy-button">
-                                            <img src="./../img/clippy.svg" width="13" alt="Copy to clipboard">
-                                        </button>
-                                      </pre>
-                                   </div>
-
-                    </div>
-
-                  </div>
-</div>
 <!-- ---------------------- >
 
 <!-- Step 6 -->
-            <div class="row" id="step-six">
-               <div class="col-md-6 step-desc">
+        <div class="row" id="step-six">
+          <div class="col-md-6 step-desc">
                   <div class="desc">
                      <h3>6.   Testea nuestro checkout</h3>
                      <p>
@@ -378,8 +351,8 @@ pod 'MercadoPagoSDK', '2.0.8'
                         </ul>
                       </p>
                   </div>
-               </div>
-               <div class="col-md-6 code" style="font-weight: 300;font-size: 15px;line-height: 30px;">
+          </div>
+          <div class="col-md-6 code" style="font-weight: 300;font-size: 15px;line-height: 30px;">
                   <p>
                     Tarjetas para probar nuestro checkout:
                     <ul>
@@ -404,86 +377,76 @@ pod 'MercadoPagoSDK', '2.0.8'
                       <b>APROJuan Perez</b> retornará un pago acreditado.
                     </p>
                   </p>
-               </div>
-            </div>
+          </div>
+        </div>
 <!-- ---------------------- >
 
 <!-- Step 7 -->
-            <div class="row" id="step-four">
-               <div class="col-md-6 step-desc">
-                  <div class="desc">
-                     <h3>7.  Sal a producción</h3>                     
-                        <p>
-                          <b>Primero:</b>
-                        </p>
-                        <p>
-                          <ul>
-                           <li style="list-style-type: decimal;"><a href="https://registration.mercadopago.com.ar/registration-mp?mode=mp" target="_blank">Registra la cuenta de MercadoPago</a> dónde recibirás el dinero.</li>
-                           <li style="list-style-type: decimal;"><a href="https://applications.mercadopago.com.ar" target="_blank">Crea una aplicación</a>.</li>
-                           <li style="list-style-type: decimal;"><a href="https://www.mercadopago.com/mla/account/credentials?type=basic" target="_blank">Configura tus credenciales</a>.</li>
-                          </ul>
-                        </p>
-                      <p><b>Desde tu servidor:</b>
-                        <br />
-                        Sólo tienes que <a href="https://www.mercadopago.com.ar/developers/es/api-docs/basic-checkout/checkout-preferences/" target="_blank">crear una preferencia de pago</a> y retornar la respuesta que te dan nuestros servicios. 
-                        <b>Hazlo desde tu servidor, porque tendrás que firmarla con tu clave privada</b>. De esta forma nos aseguramos proteger tanto al comprador, como a tu propio usuario vendedor. <a href="https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/" target="_blank">Cómo crear una preferencia desde tu servidor</a>.
-                        <br />
-                        <p class="advanced-panel">
-                          <a href="https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/additional-info/" target="_blank">Las preferencias completas</a> funcionan mucho mejor.
-                          <br />
-                          Envíanos toda la información que puedas y verás que ofrecerás tan buena experiencia para los compradores, que ¡tendrás más pagos acreditados!
-                        </p>
+        <div class="row" id="step-four">
+          <div class="col-md-6 step-desc">
+            <div class="desc">
+               <h3>7.  Sal a producción</h3>                     
+                  <p>
+                    <b>Primero:</b>
+                  </p>
+                  <p>
+                    <ul>
+                     <li style="list-style-type: decimal;"><a href="https://registration.mercadopago.com.ar/registration-mp?mode=mp" target="_blank">Registra la cuenta de MercadoPago</a> dónde recibirás el dinero.</li>
+                     <li style="list-style-type: decimal;"><a href="https://applications.mercadopago.com.ar" target="_blank">Crea una aplicación</a>.</li>
+                     <li style="list-style-type: decimal;"><a href="https://www.mercadopago.com/mla/account/credentials?type=basic" target="_blank">Configura tus credenciales</a>.</li>
+                    </ul>
+                  </p>
+                <p><b>Desde tu servidor:</b>
+                  <br />
+                  Sólo tienes que <a href="https://www.mercadopago.com.ar/developers/es/api-docs/basic-checkout/checkout-preferences/" target="_blank">crear una preferencia de pago</a> y retornar la respuesta que te dan nuestros servicios. 
+                  <b>Hazlo desde tu servidor, porque tendrás que firmarla con tu clave privada</b>. De esta forma nos aseguramos proteger tanto al comprador, como a tu propio usuario vendedor. <a href="https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/" target="_blank">Cómo crear una preferencia desde tu servidor</a>.
+                  <br />
+                  <p class="advanced-panel">
+                    <a href="https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/additional-info/" target="_blank">Las preferencias completas</a> funcionan mucho mejor.
+                    <br />
+                    Envíanos toda la información que puedas y verás que ofrecerás tan buena experiencia para los compradores, que ¡tendrás más pagos acreditados!
+                  </p>
+                </p>
+                <p><b>Desde tu aplicación:</b>
+                  <br />
+                  Te ofrecemos una clase llamada <a href="https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/core/MerchantServer.java" target="_blank">MerchantServer</a> que se conecta con tu servidor. El método <b>createPreference</b> hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (preferenceMap). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia. 
+                  <br />
+                  <a href="https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/core/MerchantServer.java" target="_blank">MerchantServer</a> se encargará de transformar la respuesta de tu servicio (la misma que los servicios de Mercado Pago) en un objeto <a href="https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/CheckoutPreference.java" target="_blank">CheckoutPreference</a> cuyo ID es el punto de entrada a nuestro checkout.
                       </p>
-                      <p><b>Desde tu aplicación:</b>
-                        <br />
-                        Te ofrecemos una clase llamada <a href="https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/core/MerchantServer.java" target="_blank">MerchantServer</a> que se conecta con tu servidor. El método <b>createPreference</b> hace un POST y envía como cuerpo del mensaje el mapa que hayas definido (preferenceMap). Indícanos tu URL base (https://api.tunombre.com) y la URI (/create_preference) donde esperas los datos para crear la preferencia. 
-                        <br />
-                        <a href="https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/core/MerchantServer.java" target="_blank">MerchantServer</a> se encargará de transformar la respuesta de tu servicio (la misma que los servicios de Mercado Pago) en un objeto <a href="https://github.com/mercadopago/px-android/blob/master/sdk/src/main/java/com/mercadopago/model/CheckoutPreference.java" target="_blank">CheckoutPreference</a> cuyo ID es el punto de entrada a nuestro checkout.
-                      </p>
-                  </div>
-               </div>
-
-
-
-              <div class="container col-md-6 code">
-
-                     <div class="tab-content">
-                                    <div class="tab-pane fade in active" id="flavor_3_step_7_swift">
-                                      <pre class="snippet">
-                                         <code id="flavor_3_step_7" class="line-numbers language-swift">
-                                           let preferenceBody = ["amount" : 12, 
-                                              "itemId" : 29334, "customerId": 207, 
-                                              "payer_email" : "customermail@test.com"]
-        
-                                              // Seteo de URL y preferenceUri
-                                              MercadoPagoContext.setBaseURL("https://api.tunombre.com")
-                                              MercadoPagoContext.setPreferenceURI("/create_preference")
-
-                                              MerchantServer.createPreference(preferenceBody,
-                                                success: { (checkoutPreference) in
-                                                // La preferencia se creó correctamente.
-                                                // Aquí puedes iniciar el Checkout de MercadoPago.
-                                                let choFlow = MPFlowBuilder.startCheckoutViewController( ExamplesUtils.preferenceSelectedID, callback: { (payment: Payment) in
-                                                    
-                                                    }, callbackCancel: {
-                                                        // Acción a ejecutar en caso de que el usuario no efectue la compra
-                                                })
-
-                                              }, failure: { (error) in
-                                                  // Ups, ocurrió un error
-                                            })
-            
-                                         </code>
-                             
-                                         <button class="copy-button">
-                                            <img src="./../img/clippy.svg" width="13" alt="Copy to clipboard">
-                                        </button>
-                                      </pre>
-                                   </div>
-                    </div> 
-
-                  </div>
             </div>
+          </div>
+          <div class="container col-md-6 code">
+            <pre class="snippet">
+               <code id="flavor_3_step_7" class="line-numbers language-swift">
+                 let preferenceBody = ["amount" : 12, 
+                    "itemId" : 29334, "customerId": 207, 
+                    "payer_email" : "customermail@test.com"]
+
+                    // Seteo de URL y preferenceUri
+                    MercadoPagoContext.setBaseURL("https://api.tunombre.com")
+                    MercadoPagoContext.setPreferenceURI("/create_preference")
+
+                    MerchantServer.createPreference(preferenceBody,
+                      success: { (checkoutPreference) in
+                      // La preferencia se creó correctamente.
+                      // Aquí puedes iniciar el Checkout de MercadoPago.
+                      let choFlow = MPFlowBuilder.startCheckoutViewController( ExamplesUtils.preferenceSelectedID, callback: { (payment: Payment) in
+                          
+                          }, callbackCancel: {
+                              // Acción a ejecutar en caso de que el usuario no efectue la compra
+                      })
+
+                    }, failure: { (error) in
+                        // Ups, ocurrió un error
+                  })
+
+               </code>
+                <button class="copy-button">
+                  <img src="./img/clippy.svg" width="13" alt="Copy to clipboard">
+                </button>
+            </pre>
+          </div>
+        </div>
 
       <footer class="footer">
 <div class ="row">
